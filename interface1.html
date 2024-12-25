@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association des Étudiants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Association des Étudiants</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+                <li><a href="#evenements">Événements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil">
+            <h2>Bienvenue à l'Association des Étudiants !</h2>
+            <p>Notre association regroupe des étudiants motivés, désireux de participer à diverses activités sociales et académiques.</p>
+        </section>
+
+        <!-- Section Qui sommes-nous -->
+        <section id="qui-sommes-nous">
+            <h2>Qui sommes-nous ?</h2>
+            <p>Nous sommes un groupe d'étudiants bénévoles qui organise des événements pour améliorer la vie universitaire et sociale des étudiants. Notre mission est de créer des opportunités de rencontre, d'échange et de développement personnel.</p>
+        </section>
+
+        <!-- Section Événements -->
+        <section id="evenements">
+            <h2>Nos Événements</h2>
+            <div class="event">
+                <h3>Soirée de bienvenue</h3>
+                <p>Date: 15 janvier 2024</p>
+                <p>Description: Une soirée pour rencontrer les nouveaux étudiants et discuter autour d'un buffet convivial.</p>
+            </div>
+            <div class="event">
+                <h3>Atelier de développement personnel</h3>
+                <p>Date: 22 février 2024</p>
+                <p>Description: Un atelier pour aider les étudiants à mieux gérer leur temps et leur stress pendant les examens.</p>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou suggestion, n'hésitez pas à nous contacter :</p>
+            <form action="#" method="POST">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Association des Étudiants - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    // Exemple simple de gestion d'envoi de formulaire
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Merci pour votre message. Nous vous répondrons dans les plus brefs délais.");
+});
+
+</script>
